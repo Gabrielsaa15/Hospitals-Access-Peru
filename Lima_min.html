@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0e5e962fdfdee0476cfd35e5c30bf5be {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0e5e962fdfdee0476cfd35e5c30bf5be" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0e5e962fdfdee0476cfd35e5c30bf5be = L.map(
+                "map_0e5e962fdfdee0476cfd35e5c30bf5be",
+                {
+                    center: [-10.443748046999925, -76.88965820299995],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_614dae07def9926464d8805f9f83852e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_614dae07def9926464d8805f9f83852e.addTo(map_0e5e962fdfdee0476cfd35e5c30bf5be);
+        
+    
+        function geo_json_ab89e479c92704c96ede8451f96d4147_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "red", "fill": false, "weight": 2};
+            }
+        }
+
+        function geo_json_ab89e479c92704c96ede8451f96d4147_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_ab89e479c92704c96ede8451f96d4147 = L.geoJson(null, {
+                onEachFeature: geo_json_ab89e479c92704c96ede8451f96d4147_onEachFeature,
+            
+                style: geo_json_ab89e479c92704c96ede8451f96d4147_styler,
+            ...{
+}
+        });
+
+        function geo_json_ab89e479c92704c96ede8451f96d4147_add (data) {
+            geo_json_ab89e479c92704c96ede8451f96d4147
+                .addData(data);
+        }
+            geo_json_ab89e479c92704c96ede8451f96d4147_add({"features": [{"geometry": {"coordinates": [[[-76.79833444311711, -10.444275613565475], [-76.79882518813369, -10.453133729228467], [-76.80019084634074, -10.461901559201232], [-76.8024183332158, -10.47049464168288], [-76.80548625643858, -10.478830192159402], [-76.80936511959071, -10.48682790173411], [-76.81401760428803, -10.494410711798698], [-76.81939892810584, -10.501505557537676], [-76.8254572749105, -10.50804407305298], [-76.83213429349264, -10.513963251261371], [-76.83936565971874, -10.519206052151006], [-76.8470816967821, -10.523721953481441], [-76.85520804755244, -10.527467438568694], [-76.86366639249927, -10.530406416407748], [-76.87237520620504, -10.532510570044538], [-76.8812505450948, -10.533759629808781], [-76.89020685869446, -10.534141568754404], [-76.89915781649283, -10.533652718414213], [-76.90801714232727, -10.53229780375593], [-76.91669944813884, -10.530089897016968], [-76.92512105895423, -10.527050290888392], [-76.93320082104361, -10.523208292305808], [-76.94086088538008, -10.518600938879521], [-76.94802745878023, -10.51327264074772], [-76.95463151543707, -10.50727475136074], [-76.96060946195975, -10.500665071390761], [-76.96590374950611, -10.493507290606038], [-76.97046342712669, -10.485870373143255], [-76.97424463102847, -10.47782789215211], [-76.97721100510427, -10.469457320266446], [-76.97933404875513, -10.46083928277278], [-76.98059338874779, -10.45205678069597], [-76.98097697259304, -10.44319439129991], [-76.98048118169379, -10.434337453706783], [-76.97911086328673, -10.425571247469826], [-76.97687928098229, -10.41698017199109], [-76.97380798448533, -10.408646934657101], [-76.96992659984728, -10.400651755472312], [-76.96527254235208, -10.393071595804019], [-76.95989065486704, -10.3859794186148], [-76.95383277518845, -10.379443487252], [-76.94715723657549, -10.373526709491264], [-76.93992830628852, -10.368286033096325], [-76.93221556752334, -10.363771898664067], [-76.92409325065897, -10.360027754977057], [-76.91563952020512, -10.357089641490525], [-76.90693572424651, -10.354985841941486], [-76.89806561352793, -10.353736612392499], [-76.88911453760666, -10.353353986314218], [-76.88016862571152, -10.35384165858003], [-76.87131396009282, -10.355194949495198], [-76.86263574971905, -10.357400849222262], [-76.85421751217774, -10.360438142199015], [-76.84614027156563, -10.364277610383509], [-76.83848178001118, -10.368882313407676], [-76.83131577025758, -10.374207942987127], [-76.82471124645237, -10.380203248222655], [-76.8187318199399, -10.386810527749498], [-76.81343509643871, -10.393966184046832], [-76.80887212051151, -10.401601334620418], [-76.80508688270389, -10.409642474220606], [-76.80211589414374, -10.418012181761926], [-76.7999878327616, -10.42662986517367], [-76.79872326461842, -10.435412537037807], [-76.79833444311711, -10.444275613565475]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_ab89e479c92704c96ede8451f96d4147.addTo(map_0e5e962fdfdee0476cfd35e5c30bf5be);
+        
+    
+            var marker_16e18427cf2ea71c7e6019b3a08e7c3c = L.marker(
+                [-10.443748046999925, -76.88965820299995],
+                {
+}
+            ).addTo(map_0e5e962fdfdee0476cfd35e5c30bf5be);
+        
+    
+            var icon_1491e06a8ce896849f4129cb0e985316 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_528c9fe1ccec797d5235a51528cc2c79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbfa7a31ecce3b7cd0d015b4c2b67d37 = $(`<div id="html_bbfa7a31ecce3b7cd0d015b4c2b67d37" style="width: 100.0%; height: 100.0%;"><b>YANAPAMPA</b><br>Hospitales dentro de 10 km: 0</div>`)[0];
+                popup_528c9fe1ccec797d5235a51528cc2c79.setContent(html_bbfa7a31ecce3b7cd0d015b4c2b67d37);
+            
+        
+
+        marker_16e18427cf2ea71c7e6019b3a08e7c3c.bindPopup(popup_528c9fe1ccec797d5235a51528cc2c79)
+        ;
+
+        
+    
+    
+                marker_16e18427cf2ea71c7e6019b3a08e7c3c.setIcon(icon_1491e06a8ce896849f4129cb0e985316);
+            
+</script>
+</html>
